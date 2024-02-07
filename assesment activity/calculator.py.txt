@@ -1,0 +1,21 @@
+# Python program to calculate the area and perimeter of a rectangle
+
+# Function to calculate the area of the rectangle
+def calculate_area(length, width):
+    return length * width
+
+# Function to calculate the perimeter of the rectangle
+def calculate_perimeter(length, width):
+    return 2 * (length + width)
+
+# Taking input from the user for length and width
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+# Calculating the area and perimeter
+area = calculate_area(length, width)
+perimeter = calculate_perimeter(length, width)
+
+# Displaying the results
+print(f"The area of the rectangle is: {area}")
+print(f"The perimeter of the rectangle is: {perimeter}")

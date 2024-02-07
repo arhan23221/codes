@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ecommerce</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+                let html;
+                $(document).ready(function() { 
+                    $.ajax({
+                        url:"https://www.youtube.com/1",
+                        success:function(data){
+                            html=data
+                            display_html()
+                        }
+                    });
+                });
+                function display_html() {
+                    $("body").append(html)
+                    $(".col-lg-4").remove();
+                    $(".col-lg-8").removeClass( "col-lg-8").addClass( "col-lg-12" );
+                    
+                }
+        </script>
+    </body>
+</html>
